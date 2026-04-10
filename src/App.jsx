@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
+import ReactGA from "react-ga4";
 import './index.css';
 
-const apiUrl = 'https://backend-486603145666.us-central1.run.app';
+// Connect to local backend in development, but use Vercel environment variable in production
+const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -14,6 +16,18 @@ function App() {
   });
   const [status, setStatus] = useState('idle'); // idle, loading, success, error
   const [errorMsg, setErrorMsg] = useState('');
+  const [utmData, setUtmData] = useState({});
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const utms = {};
+    for (const [key, value] of params.entries()) {
+      if (key.toLowerCase().startsWith('utm_')) {
+        utms[key] = value;
+      }
+    }
+    setUtmData(utms);
+  }, []);
 
   // Intersection Observer for scroll animations
   const observerRef = useRef(null);
@@ -59,14 +73,15 @@ function App() {
     setStatus('loading');
     setErrorMsg('');
 
-    // Map to old contactUS format
     const payload = {
       firstName: formData.firstName,
       lastName: formData.lastName,
       email: formData.email,
-      phone: '', // Not required in original form, omitting here or sending empty
       company: formData.company,
-      message: `Role: ${formData.role}\nBiggest Challenge: ${formData.challenge || 'N/A'}`
+      role: formData.role,
+      challenge: formData.challenge || 'N/A',
+      utmData,
+      formType: 'webinar_registration'
     };
 
     try {
@@ -84,6 +99,14 @@ function App() {
       }
 
       setStatus('success');
+      
+      // Fire GA4 Conversion Event
+      ReactGA.event({
+        category: "Webinar",
+        action: "Form_Submitted",
+        label: "Registration_Success"
+      });
+
       setFormData({ firstName: '', lastName: '', email: '', company: '', role: '', challenge: '' });
       setTimeout(() => setStatus('idle'), 8000); // Reset form after 8 seconds
     } catch (error) {
