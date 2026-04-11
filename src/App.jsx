@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import ReactGA from "react-ga4";
 import './index.css';
 
-// Connect to local backend in development, but use Vercel environment variable in production
-const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+// Connect directly to the Google Apps Script Web App for 100% free serverless backend
+const apiUrl = 'https://script.google.com/macros/s/AKfycbxdU8NhK0Lnk0RsTwsFsOmlzeKt7rTgHXBunPrBB2Xrpmk1_zDH292vzF1wjCCPqMOPfA/exec';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -85,18 +85,17 @@ function App() {
     };
 
     try {
-      const response = await fetch(`${apiUrl}/contact/contactUS`, {
+      // Use no-cors mode to completely bypass Google Apps Script CORS redirects.
+      // Note: In no-cors mode, the response is "opaque" (we cannot read the JSON body or status code)
+      // If the fetch doesn't throw a network error, we assume the data was successfully submitted.
+      await fetch(apiUrl, {
         method: 'POST',
+        mode: 'no-cors',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'text/plain;charset=utf-8',
         },
         body: JSON.stringify(payload),
       });
-
-      if (!response.ok) {
-        const data = await response.json();
-        throw new Error(data.error || 'Failed to register. Please try again.');
-      }
 
       setStatus('success');
       
