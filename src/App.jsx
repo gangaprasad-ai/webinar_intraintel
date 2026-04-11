@@ -146,8 +146,12 @@ function App() {
               {status === 'success' ? (
                 <div className="success-state">
                   <div className="success-icon">✓</div>
-                  <h3>Seat Reserved</h3>
-                  <p className="text-body" style={{ margin: 0 }}>Check your inbox for confirmation and calendar invite. See you Monday, April 20.</p>
+                  <h3 style={{marginBottom: '16px'}}>Seat Reserved</h3>
+                  <p className="text-body" style={{ margin: 0, marginBottom: '24px' }}>Check your inbox for your confirmation and calendar invite. Here is your direct, secure access link for the webinar:</p>
+                  <a href="https://us06web.zoom.us/j/81648891148?pwd=0gDcvfOBwIj7wNyTCyqavD6l0npaXX.1" target="_blank" rel="noopener noreferrer" className="submit-btn" style={{textDecoration: 'none', display: 'flex', justifyContent: 'center', background: 'var(--teal)', color: 'var(--obsidian)'}}>
+                    Join Zoom Webinar
+                  </a>
+                  <p className="text-muted" style={{marginTop: '24px', fontSize: '13px'}}>Passcode: 0gDcvfOBwIj7wNyTCyqavD6l0npaXX.1 (Embedded in link)</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} autoComplete="off">
