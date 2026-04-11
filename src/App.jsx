@@ -2,12 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactGA from "react-ga4";
 import './index.css';
 
-// Import Assets directly so Vite bundles them natively
-import DevRoyImg from '../public/images/DevRoyImgV2.svg';
-import BrianHoffmanImg from '../public/images/BrianHoffmanImgV2.svg';
-import HemantImg from '../public/images/Hemant Datta.jpeg';
-import RajImg from '../public/images/RajDasDutta.png';
-import IntraintelCover from '../public/assets/intraintel_video_cover.png';
+// Images are served from public directory at root path
 
 // Connect directly to the Google Apps Script Web App for 100% free serverless backend
 const apiUrl = 'https://script.google.com/macros/s/AKfycbxdU8NhK0Lnk0RsTwsFsOmlzeKt7rTgHXBunPrBB2Xrpmk1_zDH292vzF1wjCCPqMOPfA/exec';
@@ -90,8 +85,9 @@ function App() {
   return (
     <>
       <div id="ambient-glows"></div>
+      <div className="bg-grid"></div>
       <div className="bg-noise"></div>
-      <img src={IntraintelCover} alt="" className="bg-image" />
+      <img src="/assets/intraintel_video_cover.png" alt="" className="bg-image" />
 
       {/* NAVIGATION */}
       <nav>
@@ -111,7 +107,7 @@ function App() {
       </nav>
 
       {/* HERO SECTION */}
-      <section className="section-pad" style={{ paddingTop: '180px' }}>
+      <section className="section-pad hero-section">
         <div className="W grid-2">
           <div>
             <span className="label-tag">Inaugural Webinar · Monday, April 20, 2026</span>
@@ -120,25 +116,25 @@ function App() {
               Rebuilding <span className="serif">Clinical Trials</span><br/>
               From the Inside Out.
             </h1>
-            <p className="text-body" style={{fontSize: '18px', maxWidth: '90%'}}>
+            <p className="text-body">
               86% of trials miss enrollment deadlines. $600K–$850K lost every day a Phase III trial delays. Join IntraIntel.AI's first expert webinar to see how our 18-module compliance-native platform is collapsing the 6-month clinical workflow into 4 weeks — with live demos, real customer case studies, and the world premiere of our Clinical Trial Voice Agent.
             </p>
             
-            <div style={{ display: 'flex', gap: '40px', marginTop: '48px', borderTop: '1px solid var(--border-glass)', paddingTop: '32px' }}>
+            <div className="hero-metrics-row">
               <div>
-                <div style={{ fontSize: '32px', fontFamily: 'Playfair Display', color: 'var(--teal)', fontWeight: '900', lineHeight:'1' }}>15+</div>
+                <div className="hm-value">15+</div>
                 <div className="text-muted" style={{ marginTop: '4px' }}>Enterprise Deployments</div>
               </div>
               <div>
-                <div style={{ fontSize: '32px', fontFamily: 'Playfair Display', color: 'var(--teal)', fontWeight: '900', lineHeight:'1' }}>95%+</div>
+                <div className="hm-value">95%+</div>
                 <div className="text-muted" style={{ marginTop: '4px' }}>Pilot-to-Paid Rate</div>
               </div>
               <div>
-                <div style={{ fontSize: '32px', fontFamily: 'Playfair Display', color: 'var(--teal)', fontWeight: '900', lineHeight:'1' }}>$350K</div>
+                <div className="hm-value">$350K</div>
                 <div className="text-muted" style={{ marginTop: '4px' }}>ARR · Active 2026</div>
               </div>
               <div>
-                <div style={{ fontSize: '32px', fontFamily: 'Playfair Display', color: 'var(--teal)', fontWeight: '900', lineHeight:'1' }}>$50M+</div>
+                <div className="hm-value">$50M+</div>
                 <div className="text-muted" style={{ marginTop: '4px' }}>Customer Value Add</div>
               </div>
             </div>
@@ -268,7 +264,7 @@ function App() {
               </div>
             </div>
             <div className="agenda-item glass-panel" style={{borderColor: 'var(--gold)', background: 'linear-gradient(145deg, rgba(244, 162, 97, 0.05) 0%, rgba(255,255,255,0.01) 100%)'}}>
-              <div class="agenda-time" style={{color: 'var(--gold)'}}>0:35 — 0:55</div>
+              <div className="agenda-time" style={{color: 'var(--gold)'}}>0:35 — 0:55</div>
               <div className="agenda-content">
                 <span className="audience-role" style={{display: 'inline-block', marginBottom: '8px', color: 'var(--gold)'}}>World Premiere</span>
                 <h4>AI Voice Agent for Clinical Trials</h4>
@@ -505,7 +501,7 @@ function App() {
           
           <div className="speakers-grid" style={{marginBottom: '48px'}}>
             <div className="speaker-card">
-              <img src={DevRoyImg} alt="Dev Roy" className="speaker-img" style={{objectPosition: 'center top'}} />
+              <img src="/images/DevRoyImgV2.svg" alt="Dev Roy" className="speaker-img" style={{objectPosition: 'center top'}} />
               <div className="speaker-info">
                 <div className="speaker-name">Dev Roy</div>
                 <div className="speaker-role">CEO & Founder</div>
@@ -515,7 +511,7 @@ function App() {
             </div>
             
             <div className="speaker-card">
-              <img src={BrianHoffmanImg} alt="Brian Hoffman" className="speaker-img" style={{objectPosition: 'center top'}} />
+              <img src="/images/BrianHoffmanImgV2.svg" alt="Brian Hoffman" className="speaker-img" style={{objectPosition: 'center top'}} />
               <div className="speaker-info">
                 <div className="speaker-name">Brian Hoffman</div>
                 <div className="speaker-role">CTO & Co-Founder</div>
@@ -678,10 +674,7 @@ function App() {
           <div className="fi2">
             <div className="fb">
               <div style={{display: 'flex', alignItems: 'center', gap: '12px'}}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="10" stroke="#00e5ff" strokeWidth="1.5" strokeDasharray="4 4"></circle>
-                  <path d="M12 6L16 12L12 18L8 12L12 6Z" fill="#00e5ff" fillOpacity="0.1" stroke="#00e5ff" strokeWidth="1.5" />
-                </svg>
+                 
                 <svg width="180" height="32" viewBox="0 0 347 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M21.0099 27.1881V40.1626C21.0099 41.278 20.5201 42.3371 19.6703 43.0595L13.9673 47.907C12.5475 49.1138 10.4624 49.1138 9.0426 47.907L3.33963 43.0595C2.48978 42.3371 2 41.278 2 40.1626V17.773C2 16.415 2.72434 15.1601 3.90027 14.4808L23.6052 3.0985C24.7819 2.41879 26.2319 2.41879 27.4086 3.0985L47.1134 14.4808C48.2894 15.1601 49.0137 16.415 49.0137 17.773V40.1669C49.0137 41.2798 48.5261 42.3368 47.6795 43.0592L42.0076 47.8985C40.5881 49.1096 38.4994 49.1116 37.0775 47.9031L31.3792 43.0595C30.5294 42.3371 30.0396 41.278 30.0396 40.1626V27.1881" stroke="url(#flg)" strokeWidth="3.80198" strokeLinecap="round"/>
                 <rect x="19.1089" y="19.5842" width="3.80198" height="3.80198" rx="1.90099" fill="url(#flr1)"/>
