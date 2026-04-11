@@ -300,32 +300,7 @@ function App() {
           </div>
         </div>
       </section>
-
-      {/* VOICE MODULE */}
-      <section className="SECA">
-        <div className="W">
-          <div className="vw rev">
-            <div className="vl">
-              <div className="pill pg">🎙 World Premiere · Monday, April 20</div>
-              <h2 className="hlg" style={{marginBottom: '18px'}}>Introducing the<br/><span className="grad">Clinical Trial Voice Agent</span></h2>
-              <p>80–86% of trials miss enrollment deadlines. Coordinators burn out managing fragmented outreach systems. Patients drop out at 20–30% rates — costing $19,533 to replace each one. IntraIntel's Clinical Trial Voice Agent delivers daily automated patient follow-ups, adverse event screening, and compliance tracking — all via 21 CFR Part 11-compliant AI voice. Debuting live at this webinar for the very first time.</p>
-              <div className="vstats">
-                <div className="vs"><div className="vsn">87%</div><div className="vsl">Patient satisfaction with AI voice agents (VOICE-COVID-19-II RCT)</div></div>
-                <div className="vs"><div className="vsn">70%+</div><div className="vsl">Reduction in coordinator phone workflow burden</div></div>
-                <div className="vs"><div className="vsn">89%</div><div className="vsl">Trial completion rate vs. 60% in traditional models</div></div>
-                <div className="vs"><div className="vsn">38%</div><div className="vsl">CAGR of AI voice agents in healthcare (Grand View Research)</div></div>
-              </div>
-            </div>
-            <div className="vmods">
-              <div className="vm"><div className="vmi">📞</div><div><div className="vmn">Patient Outreach &amp; Enrollment</div><div className="vmd">Automated multilingual voice calls for screening, scheduling, and enrollment — reducing site burden by up to 90%.</div></div></div>
-              <div className="vm"><div className="vmi">📋</div><div><div className="vmn">PRO Data Capture</div><div className="vmd">Structured patient-reported outcome collection via voice — 21 CFR Part 11 compliant with full audit trail and timestamping.</div></div></div>
-              <div className="vm"><div className="vmi">⚠️</div><div><div className="vmn">Adverse Event Detection</div><div className="vmd">Real-time AE signal detection from voice — flagging adverse events up to 300x faster than manual review workflows.</div></div></div>
-              <div className="vm"><div className="vmi">📊</div><div><div className="vmn">Retention &amp; Sentiment Analytics</div><div className="vmd">Dropout risk scoring and sentiment analysis from every patient interaction — with real-time coordinator dashboards.</div></div></div>
-              <div className="vm"><div className="vmi">🛡</div><div><div className="vmn">Compliance-Native Architecture</div><div className="vmd">21 CFR Part 11, HIPAA, and GDPR from Day 1. Every interaction logged, timestamped, encrypted, and audit-ready.</div></div></div>
-            </div>
-          </div>
-        </div>
-      </section>
+ 
 
       {/* PLATFORM MODULES */}
       <section className="SEC">
@@ -336,151 +311,10 @@ function App() {
             <p>clinical.intraintel.ai covers the complete trial lifecycle — from literature review to reimbursement optimization. Every module is AI-Powered, compliance-native, and connects without data migration.</p>
           </div>
 
-          <div style={{display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '18px'}} className="rev">
-            <div style={{width: '4px', height: '24px', background: 'linear-gradient(180deg,var(--teal),var(--teal-deep))', borderRadius: '2px', flexShrink: 0}}></div>
-            <div>
-              <span style={{fontSize: '13px', fontWeight: 700, color: 'var(--white)'}}>Clinical Intelligence</span>
-              <span style={{fontSize: '12px', color: 'var(--muted)', marginLeft: '8px'}}>14 modules</span>
-            </div>
-          </div>
-          <div className="mg rev d1" style={{marginBottom: '40px'}}>
-            <div className="mo"><div className="mon">01</div><div><div className="mot">Research &amp; Literature Intelligence</div><div className="mod">AI-powered aggregation, recursive citation mining, predicate device comparison, automated insight synthesis from PubMed, ClinicalTrials.gov &amp; MAUDE.</div></div></div>
-            <div className="mo"><div className="mon">02</div><div><div className="mot">Protocol Design &amp; FDA Alignment</div><div className="mod">Predictive endpoint modeling, regulatory correlation analysis, Monte Carlo power simulations aligned to FDA predicate criteria.</div></div></div>
-            <div className="mo"><div className="mon">03</div><div><div className="mot">Real-Time Trial Data Monitoring</div><div className="mod">Site-level ingestion, anomaly detection, adverse event flagging, and real-time dashboards across all active trial sites.</div></div></div>
-            <div className="mo"><div className="mon">04</div><div><div className="mot">Endpoint Analytics &amp; Benchmarking</div><div className="mod">Compare trial outcomes to historical FDA predicate data and competitor endpoints — alignment gaps surfaced instantly.</div></div></div>
-            <div className="mo"><div className="mon">05</div><div><div className="mot">Predictive Endpoint Recommendation Engine</div><div className="mod">AI forecasts FDA acceptance likelihood and recommends protocol refinements to maximize regulatory submission success.</div></div></div>
-            <div className="mo"><div className="mon">06</div><div><div className="mot">Documentation, Coding &amp; Reimbursement Optimization</div><div className="mod">NLP-driven coding accuracy, claims validation, and billing optimization — fully aligned to CPT/HCPCS pathway.</div></div></div>
-            <div className="mo"><div className="mon">07</div><div><div className="mot">Precision Patient Care Analytics</div><div className="mod">Integrate vitals, biomarkers, EHR data — detect real-time complications and deliver personalized AI-driven care recommendations.</div></div></div>
-            <div className="mo"><div className="mon">08</div><div><div className="mot">AI Clinical Decision Support</div><div className="mod">Evidence-based recommendations, guideline retrieval, task triage, and clinician fatigue mitigation via conversational AI interfaces.</div></div></div>
-            <div className="mo"><div className="mon">09</div><div><div className="mot">Device Integration &amp; IoT Hub</div><div className="mod">HL7/FHIR device integration, real-time device metrics ingestion, extensible architecture for future medical device innovations.</div></div></div>
-            <div className="mo"><div className="mon">10</div><div><div className="mot">Post-Market Clinical Support &amp; Training</div><div className="mod">AI-generated continuous education, clinician support, and 24/7 AI Q&amp;A — sustaining adoption and performance post-trial.</div></div></div>
-            <div className="mo"><div className="mon">11</div><div><div className="mot">IP &amp; Commercialization Strategy</div><div className="mod">Identify patentable innovations, monitor IP opportunities, and generate AI-driven commercialization pathways and monetization roadmaps.</div></div></div>
-            <div className="mo"><div className="mon">12</div><div><div className="mot">Patient Recruitment &amp; Retention</div><div className="mod">AI-driven recruitment optimization, demographic targeting, eligibility screening, and compliance monitoring across trial sites.</div></div></div>
-            <div className="mo"><div className="mon">13</div><div><div className="mot">Precision Patient Recruitment (Advanced)</div><div className="mod">Predictive enrollment modeling, automated candidate screening, and accelerated timeline analysis to hit enrollment milestones.</div></div></div>
-            <div className="mo" style={{borderColor: 'rgba(244,162,97,0.25)', background: 'rgba(244,162,97,0.04)'}}><div className="mon" style={{background: 'linear-gradient(135deg,var(--gold),#e07840)'}}>14</div><div><div className="mot" style={{color: 'var(--gold)'}}>Clinical Trial Voice Agent <span style={{fontSize: '10px', fontWeight: 700, background: 'var(--gold-dim)', border: '1px solid rgba(244,162,97,0.3)', borderRadius: '4px', padding: '2px 7px', color: 'var(--gold)', marginLeft: '6px'}}>LIVE DEBUT APR 20</span></div><div className="mod">Daily automated patient follow-ups, adverse event screening, and compliance tracking via 21 CFR Part 11-compliant AI voice agent.</div></div></div>
-          </div>
-
-          <div style={{display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '18px'}} className="rev">
-            <div style={{width: '4px', height: '24px', background: 'linear-gradient(180deg,var(--gold),#e07840)', borderRadius: '2px', flexShrink: 0}}></div>
-            <div>
-              <span style={{fontSize: '13px', fontWeight: 700, color: 'var(--white)'}}>Reimbursement &amp; Market Access</span>
-              <span style={{fontSize: '12px', color: 'var(--muted)', marginLeft: '8px'}}>4 modules</span>
-            </div>
-          </div>
-          <div className="mg rev d2">
-            <div className="mo" style={{borderColor: 'rgba(244,162,97,0.18)'}}><div className="mon" style={{background: 'linear-gradient(135deg,var(--gold),#e07840)'}}>15</div><div><div className="mot">Reimbursement Intelligence Module</div><div className="mod">CPT/ICD/HCPCS coding automation, NTAP/TPT/TCET workflow, DRG mapping, and site-of-service financial modeling.</div></div></div>
-            <div className="mo" style={{borderColor: 'rgba(244,162,97,0.18)'}}><div className="mon" style={{background: 'linear-gradient(135deg,var(--gold),#e07840)'}}>16</div><div><div className="mot">CMS Application Automation (NTAP/TPT Generator)</div><div className="mod">Auto-fill CMS NTAP/TPT templates using clinical and cost data — cutting application preparation time by 70%+.</div></div></div>
-            <div className="mo" style={{borderColor: 'rgba(244,162,97,0.18)'}}><div className="mon" style={{background: 'linear-gradient(135deg,var(--gold),#e07840)'}}>17</div><div><div className="mot">Financial Margin &amp; Pricing Simulator</div><div className="mod">Simulate IPPS/OPPS/ASC/OBL payments, calculate margin per procedure, and run sensitivity analyses for pricing strategy.</div></div></div>
-            <div className="mo" style={{borderColor: 'rgba(244,162,97,0.18)'}}><div className="mon" style={{background: 'linear-gradient(135deg,var(--gold),#e07840)'}}>18</div><div><div className="mot">Market Access Strategy &amp; Intelligence</div><div className="mod">Payer landscape analysis, formulary positioning, and AI-driven market access roadmaps for accelerated commercial adoption.</div></div></div>
-          </div>
+           
         </div>
       </section>
-
-      {/* SPEAKERS */}
-      <section className="SECA">
-        <div className="W">
-          <div className="sh rev">
-            <div className="eyebrow">Your Hosts</div>
-            <h2 className="hlg">Founding Team &amp;<br/>Advisory Board</h2>
-            <p>150+ combined years of SaMD, clinical AI, and regulated healthcare deployment experience — available live for your questions on Monday, April 20.</p>
-          </div>
-          <div className="spg rev d1">
-            <div className="sp">
-              <div className="spa">DR</div>
-              <div className="spn">Dev Roy</div>
-              <div className="spr">Founder &amp; CEO</div>
-              <div className="spo">IntraIntel.AI · Fairfax, Virginia</div>
-              <div className="spb">Leads strategy, enterprise growth, and high-stakes clinical operations. Bootstrapped IntraIntel from a $12K first customer to $350K ARR with 15+ paying customers and $50M+ in documented customer value — zero institutional capital.</div>
-            </div>
-            <div className="sp">
-              <div className="spa">BH</div>
-              <div className="spn">Brian Hoffman</div>
-              <div className="spr">CTO &amp; Co-Founder</div>
-              <div className="spo">IntraIntel.AI</div>
-              <div className="spb">Architect of IntraIntel's secure, multi-agent SaMD platform. Designed the zero-migration OAuth connection to 50+ clinical data sources including FHIR/HL7, EHR, EMR, SharePoint, AWS, and Azure. Leads all compliant AI systems architecture.</div>
-            </div>
-            <div className="sp">
-              <div className="spa">AL</div>
-              <div className="spn">Alex Lee</div>
-              <div className="spr">FDA Compliance Advisor</div>
-              <div className="spo">Advisory Board · 30+ Years FDA/SaMD</div>
-              <div className="spb">30+ years in FDA compliance and SaMD device approvals. Guiding IntraIntel's 510(k) regulatory pathway and CPT/HCPCS reimbursement strategy — the only advisor of this caliber embedded at seed stage in this category.</div>
-            </div>
-          </div>
-          <div className="adv-grid rev d2">
-            <div className="adv"><div className="adv-av">PM</div><div><div className="adv-n">Dr. Pradipta Majumder, MD</div><div className="adv-r">20+ yrs Clinical Research &amp; AI Integration</div></div></div>
-            <div className="adv"><div className="adv-av">ZB</div><div><div className="adv-n">Prof. Dr. Zeynep Birsu Çinçin</div><div className="adv-r">20+ yrs Oncology Trials &amp; Biomarkers</div></div></div>
-            <div className="adv"><div className="adv-av">RD</div><div><div className="adv-n">Raj DasGupta · CTO, RIVA Solutions</div><div className="adv-r">20+ yrs Cloud &amp; Cybersecurity</div></div></div>
-            <div className="adv"><div className="adv-av">MP</div><div><div className="adv-n">Mukesh Pandey</div><div className="adv-r">20+ yrs AI Strategy · Former Amazon/Google</div></div></div>
-          </div>
-        </div>
-      </section>
-
-      {/* AUDIENCE */}
-      <section className="SEC">
-        <div className="W">
-          <div className="sh rev">
-            <div className="eyebrow">Who Should Attend</div>
-            <h2 className="hlg">Built for Decision-Makers<br/>Who Own Clinical Outcomes</h2>
-            <p>If your organization runs, manages, funds, or regulates clinical trials — this webinar is designed for your exact challenges and buying criteria.</p>
-          </div>
-          <div className="audg rev d1">
-            <div className="aud"><div className="aui">🏥</div><div className="aud-dept">Executive &amp; Clinical</div><ul><li>Chief Medical Officer</li><li>Chief Clinical Officer</li><li>Chief Scientific Officer</li><li>Chief Innovation Officer</li><li>Chief Medical Informatics Officer</li></ul></div>
-            <div className="aud"><div className="aui">⚙️</div><div className="aud-dept">Clinical Operations</div><ul><li>VP, Clinical Operations</li><li>Director of Clinical Trials</li><li>Head of Clinical Development</li><li>Clinical Operations Director</li><li>Clinical Research Director</li></ul></div>
-            <div className="aud"><div className="aui">📊</div><div className="aud-dept">Data &amp; Analytics</div><ul><li>VP, Clinical Data Management</li><li>Head of Clinical Informatics</li><li>Director of Clinical Analytics</li><li>Head of Data Science &amp; Analytics</li></ul></div>
-            <div className="aud"><div className="aui">📋</div><div className="aud-dept">Regulatory &amp; Compliance</div><ul><li>VP, Regulatory Affairs</li><li>Director, Regulatory Operations</li><li>Head of Compliance &amp; QA</li></ul></div>
-            <div className="aud"><div className="aui">🔬</div><div className="aud-dept">Medical Device &amp; Pharma</div><ul><li>Head of Device Development</li><li>VP, Medical Affairs</li><li>Director, Device Innovation</li></ul></div>
-            <div className="aud"><div className="aui">💻</div><div className="aud-dept">IT &amp; Digital</div><ul><li>Chief Information Officer</li><li>Chief Digital Officer</li><li>Director, Healthcare IT Integration</li></ul></div>
-            <div className="aud"><div className="aui">🤝</div><div className="aud-dept">Business Development</div><ul><li>VP, Strategic Partnerships</li><li>Head of BD (Clinical)</li></ul></div>
-            <div className="aud" style={{background: 'rgba(0,180,216,0.055)', borderColor: 'rgba(0,180,216,0.2)'}}><div className="aui">💡</div><div className="aud-dept" style={{color: 'var(--gold)'}}>Not Sure?</div><ul><li>You operate or fund clinical research</li><li>You manage AI vendor decisions</li><li>You evaluate SaMD platforms</li><li>You belong in this room.</li></ul></div>
-          </div>
-        </div>
-      </section>
-
-      {/* PROOF */}
-      <section className="SECA">
-        <div className="W">
-          <div className="sh rev">
-            <div className="eyebrow">Platform Proof</div>
-            <h2 className="hlg">Not a Demo Company.<br/>A Deployed Platform.</h2>
-            <p>Every case study at this webinar is a live customer deployment with documented, attributable outcomes. Not projected. Not modeled. Named customers. Real results.</p>
-          </div>
-          <div className="pg3 rev d1">
-            <div className="pf">
-              <div className="pfc">Restorative Therapies · Medical Devices / FES Therapy</div>
-              <div className="pfh">AI-Powered Clinical Data Integration &amp; Neuromodulation Optimization</div>
-              <div className="pfn">Manual clinical literature review eliminated. Training video production cut from 6 weeks to 48 hours. Real-time patient monitoring and FDA regulatory reporting automated across a 9-module platform.</div>
-              <div className="pfb">80<span className="pfu">%</span></div>
-              <div className="pfc2">Cost reduction · 50%+ training time reduction · 30–40% faster protocols</div>
-            </div>
-            <div className="pf">
-              <div className="pfc">XylyxBio · Biomaterials / FDA IND Readiness</div>
-              <div className="pfh">Regulatory Document Automation for Pre-IND Submission</div>
-              <div className="pfn">Multiple FDA revision cycles reduced. Automated FDA-ready module generation, integrated efficacy tables, and compliance-first document drafting accelerated IND submission and valuation milestones.</div>
-              <div className="pfb">60<span className="pfu">%</span></div>
-              <div className="pfc2">Faster FDA IND drafting · 40% fewer edits · 25% faster time-to-valuation</div>
-            </div>
-            <div className="pf">
-              <div className="pfc">TransRadial / Solaris · Vascular Devices &amp; Investment DD</div>
-              <div className="pfh">Clinical Marketing Automation &amp; Investment Due Diligence</div>
-              <div className="pfn">2,000+ files ingested. 176 due diligence questions auto-answered. Real-time EMR-integrated risk calculator. Executive content creation reduced from 8 hours to 20 minutes. $25K+ saved per deal.</div>
-              <div className="pfb">96<span className="pfu">%</span></div>
-              <div className="pfc2">Executive time saved (8 hrs → 20 min) · 70% DD reduction · $25K+/deal</div>
-            </div>
-          </div>
-          <div className="bdg-row rev d2">
-            <div className="bdg">🔒 SOC 2 Type I Certified</div>
-            <div className="bdg">🏥 HIPAA Compliant</div>
-            <div className="bdg">🛡 AES-256 Zero Trust</div>
-            <div className="bdg">📋 GDPR Aligned</div>
-            <div className="bdg">⚡ 4–8 Week ROI</div>
-            <div className="bdg">🔗 Zero Data Migration</div>
-            <div className="bdg">🧬 SaMD · FDA 510(k) Q3 2026</div>
-            <div className="bdg">💰 CPT/HCPCS Pathway</div>
-          </div>
-        </div>
-      </section>
-
+ 
       {/* CTA */}
       <section className="SEC">
         <div className="W">
