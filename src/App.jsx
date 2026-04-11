@@ -323,7 +323,7 @@ function App() {
               <h2>Monday, April 20. 200 Seats. Free.</h2>
               <p>The first public demonstration of AI-native clinical trial orchestration — including the live world premiere of IntraIntel's Clinical Trial Voice Agent. Your competitors are already evaluating this category.</p>
               <div className="br">
-                <a href="#register" className="bw">Register Now — It's Free →</a>
+                <a href="#register" className="bw">Register Your Spot Now</a>
                 <a href="mailto:dev.roy@intraintel.ai" className="bo">Contact Dev Roy Directly</a>
               </div>
               <p className="ccon">dev.roy@intraintel.ai &nbsp;·&nbsp; 703-984-9981 &nbsp;·&nbsp; clinical.intraintel.ai &nbsp;·&nbsp; Fairfax, Virginia</p>
