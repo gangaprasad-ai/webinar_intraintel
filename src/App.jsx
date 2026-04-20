@@ -137,7 +137,7 @@ function App() {
               </defs>
             </svg>
           </a>
-          <span className="nev">📅 Monday, April 20, 2026 · Free Webinar</span>
+          <span className="nev">📅 Saturday, May 15 2026 · Free Webinar</span>
           <a href="#register" className="nreg">Reserve Your Seat →</a>
         </div>
       </nav>
@@ -147,11 +147,11 @@ function App() {
         <div className="W">
           <div className="hgrid">
             <div className="hleft">
-              <div className="pill pt"><span className="dot"></span> Inaugural Webinar · Monday, April 20, 2026</div>
+              <div className="pill pt"><span className="dot"></span> Inaugural Webinar · Saturday, May 15 2026</div>
               <h1 className="hxl" style={{marginBottom: '22px'}}>The AI Operating System<br/>Rebuilding <span className="grad">Clinical Trials</span><br/>From the Inside Out</h1>
               <p className="hdesc">86% of trials miss enrollment deadlines. $600K–$850K lost every day a Phase III trial delays. Join IntraIntel.AI's first expert webinar to see how our 18-module compliance-native platform is collapsing the 6-month clinical workflow into 4 weeks — with live demos, real customer case studies, and the world premiere of our Clinical Trial Voice Agent.</p>
               <div className="emeta">
-                <div className="ep"><span className="ei">📅</span><div><div className="el">Monday, April 20, 2026</div><div className="es">11:00 AM ET · 90 Minutes</div></div></div>
+                <div className="ep"><span className="ei">📅</span><div><div className="el">Saturday, May 15 2026</div><div className="es">11:00 AM ET · 90 Minutes</div></div></div>
                 <div className="ep"><span className="ei">🌐</span><div><div className="el">Live Virtual Event</div><div className="es">Zoom · Recording provided</div></div></div>
                 <div className="ep"><span className="ei">🎯</span><div><div className="el">200 Seats Available</div><div className="es">Healthcare & Clinical Leaders Only</div></div></div>
               </div>
@@ -223,7 +223,7 @@ function App() {
                   </div>
                   {errorMsg && <div className="error-text">{errorMsg}</div>}
                   <button type="submit" className="breg" disabled={status === 'loading'}>
-                    {status === 'loading' ? 'Registering...' : 'Reserve My Seat — April 20 →'}
+                    {status === 'loading' ? 'Registering...' : 'Reserve My Seat — May 15 →'}
                   </button>
                   <p className="priv">🔒 &nbsp;No spam. No data selling. HIPAA & GDPR compliant.</p>
                 </form>
@@ -231,7 +231,7 @@ function App() {
                 <div className="succ" id="reg-success">
                   <div className="sico">✓</div>
                   <h3>You're registered!</h3>
-                  <p>Check your inbox for confirmation<br/>and calendar invite. See you Monday, April 20.</p>
+                  <p>Check your inbox for confirmation<br/>and calendar invite. See you Saturday, May 15.</p>
                 </div>
               )}
             </div>
@@ -256,7 +256,7 @@ function App() {
       <section className="SEC">
         <div className="W">
           <div className="sh rev">
-            <div className="eyebrow">Session Agenda · Monday, April 20, 2026</div>
+            <div className="eyebrow">Session Agenda · Saturday, May 15 2026</div>
             <h2 className="hlg">90 Minutes. Zero Fluff.<br/>100% Actionable Intelligence.</h2>
             <p>Designed for senior clinical and healthcare executives who need data, not slides. Every session grounded in live deployments and documented customer outcomes.</p>
           </div>
@@ -320,7 +320,7 @@ function App() {
         <div className="W">
           <div className="ctab rev">
             <div className="ctai">
-              <h2>Monday, April 20. 200 Seats. Free.</h2>
+              <h2>Saturday, May 15. 200 Seats. Free.</h2>
               <p>The first public demonstration of AI-native clinical trial orchestration — including the live world premiere of IntraIntel's Clinical Trial Voice Agent. Your competitors are already evaluating this category.</p>
               <div className="br">
                 <a href="#register" className="bw">Register Your Spot Now</a>
