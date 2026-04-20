@@ -137,7 +137,7 @@ function App() {
               </defs>
             </svg>
           </a>
-          <span className="nev">📅 Saturday, May 14 2026 · Free Webinar</span>
+          <span className="nev">📅 Thursday, May 14 2026 · Free Webinar</span>
           <a href="#register" className="nreg">Reserve Your Seat →</a>
         </div>
       </nav>
@@ -147,11 +147,11 @@ function App() {
         <div className="W">
           <div className="hgrid">
             <div className="hleft">
-              <div className="pill pt"><span className="dot"></span> Inaugural Webinar · Thursday, May 14 2026</div>
+              <div className="pill pt"><span className="dot"></span> Inaugural Webinar · Thursday, May 14, 2026</div>
               <h1 className="hxl" style={{marginBottom: '22px'}}>The AI Operating System<br/>Rebuilding <span className="grad">Clinical Trials</span><br/>From the Inside Out</h1>
               <p className="hdesc">86% of trials miss enrollment deadlines. $600K–$850K lost every day a Phase III trial delays. Join IntraIntel.AI's first expert webinar to see how our 18-module compliance-native platform is collapsing the 6-month clinical workflow into 4 weeks — with live demos, real customer case studies, and the world premiere of our Clinical Trial Voice Agent.</p>
               <div className="emeta">
-                <div className="ep"><span className="ei">📅</span><div><div className="el">Saturday, May 14 2026</div><div className="es">11:00 AM ET · 90 Minutes</div></div></div>
+                <div className="ep"><span className="ei">📅</span><div><div className="el">Thursday, May 14, 2026</div><div className="es">11:00 AM ET · 90 Minutes</div></div></div>
                 <div className="ep"><span className="ei">🌐</span><div><div className="el">Live Virtual Event</div><div className="es">Zoom · Recording provided</div></div></div>
                 <div className="ep"><span className="ei">🎯</span><div><div className="el">200 Seats Available</div><div className="es">Healthcare & Clinical Leaders Only</div></div></div>
               </div>
@@ -223,15 +223,19 @@ function App() {
                   </div>
                   {errorMsg && <div className="error-text">{errorMsg}</div>}
                   <button type="submit" className="breg" disabled={status === 'loading'}>
-                    {status === 'loading' ? 'Registering...' : 'Reserve My Seat — May 15 →'}
+                    {status === 'loading' ? 'Registering...' : 'Reserve My Seat — May 14 →'}
                   </button>
                   <p className="priv">🔒 &nbsp;No spam. No data selling. HIPAA & GDPR compliant.</p>
                 </form>
               ) : (
                 <div className="succ" id="reg-success">
                   <div className="sico">✓</div>
-                  <h3>You're registered!</h3>
-                  <p>Check your inbox for confirmation<br/>and calendar invite. See you Saturday, May 15.</p>
+                  <h3 style={{marginBottom: '16px'}}>You're registered!</h3>
+                  <p>Check your inbox for confirmation and calendar invite.</p>
+                  <a href="https://us06web.zoom.us/j/85813353242?pwd=GCqIJsLYs5Mv6oiBHkZyNTY81EjRIZ.1" target="_blank" rel="noopener noreferrer" className="breg" style={{textDecoration: 'none', display: 'flex', justifyContent: 'center', marginTop: '24px'}}>
+                    Join Zoom Webinar
+                  </a>
+                  <p style={{marginTop: '16px', fontSize: '13px', opacity: 0.8}}>Passcode: 697579</p>
                 </div>
               )}
             </div>
